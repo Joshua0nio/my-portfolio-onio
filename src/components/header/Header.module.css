@@ -1,0 +1,87 @@
+.link {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.link:hover {
+    color: #f0e68c;
+}
+
+.animatedImage {
+    border-radius: 50%;
+    margin-right: 10px;
+    animation: fadeInScale 0.8s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.animatedImage:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.animatedTitle {
+    font-size: 24px;
+    /* Adjust size as needed */
+    font-weight: 600;
+    /* Semi-bold */
+    color: #080808;
+    /* Main color */
+    margin: 0;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow for better readability */
+}
+
+.animatedTitle:hover {
+    color: #1890ff;
+    /* Hover color */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    /* Darker shadow on hover */
+}
+
+/* Header.module.css */
+
+.menuLink {
+    color: #080808;
+    font-weight: 500;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+.menuLink:hover {
+    color: #1890ff;
+    /* Ant Design primary color for hover effect */
+    font-weight: 700;
+}
+
+.menuItem {
+    padding: 0 15px;
+}
+
+.menuContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuSeparator {
+    border-left: 1px solid #e8e8e8;
+    /* Light separator line */
+    height: 24px;
+    margin: 0 10px;
+}
+
+
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
