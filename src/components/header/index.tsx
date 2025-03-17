@@ -17,11 +17,15 @@ import React, { useEffect, useState } from "react";
 import styles from './Header.module.css';
 import Paragraph from "antd/es/typography/Paragraph";
 
+
 const { Title } = Typography;
 const { useToken } = theme;
 
-export const Header: React.FC<RefineThemedLayoutV2HeaderProps> = ({ sticky = true }) => {
-  const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
+export const Header: React.FC<RefineThemedLayoutV2HeaderProps & {
+  isDarkMode?: boolean;
+  setIsDarkMode?: (isDark: boolean) => void;
+  toggleDarkMode?: () => void;
+}> = ({ sticky = true, isDarkMode = false, toggleDarkMode }) => {
   const [currentTime, setCurrentTime] = useState<string>("");
 
   useEffect(() => {
@@ -60,12 +64,6 @@ export const Header: React.FC<RefineThemedLayoutV2HeaderProps> = ({ sticky = tru
     padding: "10px 20px",
   };
 
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-    // Change body background color based on dark mode
-    document.body.style.backgroundColor = !isDarkMode ? "#333" : "#f0f2f5";
-    document.body.style.color = !isDarkMode ? "#333" : "#f0f2f5";
-  };
 
   return (
     <AntdLayout.Header style={headerStyles}>
