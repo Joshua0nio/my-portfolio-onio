@@ -113,7 +113,7 @@ export default function Home() {
 
             <Col xs={24} md={12} style={{ textAlign: 'center' }}>
               <Image
-                src="/images/alsome.jpg"
+                src="https://joshua0nio.github.io/my-portfolio-onio/images/alsome.jpg"
                 alt="Profile Picture"
                 width={500}
                 height={550}

@@ -60,7 +60,7 @@ const AboutMe = () => {
               </Col>
               <Col xs={24} md={10}>
                 <Image
-                  src="/images/coding-freak.gif"
+                  src="https://joshua0nio.github.io/my-portfolio-onio/images/coding-freak.gif"
                   alt="Coding Illustration"
                   priority
                   style={{

@@ -74,7 +74,7 @@ export const Header: React.FC<RefineThemedLayoutV2HeaderProps> = ({ sticky = tru
         <Col span={12} style={{ display: "flex", alignItems: "center" }}>
           <Space>
             <Image
-              src="/images/me.jpg" // Fallback image
+              src="https://joshua0nio.github.io/my-portfolio-onio/images/me.jpg" // Fallback image
               alt="Profile Picture"
               width={80}
               height={80}
