@@ -24,7 +24,8 @@ const AboutMe = () => {
             cover={
               <Avatar
                 size={180}
-                src="/alsome.png" // Replace with your image URL
+                src="images/alsome.png" // Replace with your image URL
+
                 style={{ border: '4px solid #1890ff', borderRadius: '50%' }}
               />
             }
@@ -59,16 +60,16 @@ const AboutMe = () => {
               </Col>
               <Col xs={24} md={10}>
                 <Image
-                  src="/coding-freak.gif"
+                  src="/images/coding-freak.gif"
                   alt="Coding Illustration"
                   unoptimized
+
                   style={{
                     borderRadius: '10px',
                     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-                    width: '100%',
-                    height: '100%'
                   }}
-
+                  layout="fill"  // Makes the image responsive
+                  objectFit="contain"  // Keeps aspect ratio
                 />
               </Col>
             </Row>
