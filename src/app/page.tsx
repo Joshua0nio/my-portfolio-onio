@@ -117,6 +117,7 @@ export default function Home() {
                 alt="Profile Picture"
                 width={500}
                 height={550}
+                unoptimized
                 style={{ borderRadius: '30%', border: '2px solid #ddd' }}
               />
             </Col>

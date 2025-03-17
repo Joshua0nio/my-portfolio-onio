@@ -1,4 +1,5 @@
-import { Typography, Row, Col, Card, Avatar, Image } from "antd";
+import { Typography, Row, Col, Card, Avatar } from "antd";
+import Image from "next/image";
 const { Title, Paragraph } = Typography;
 
 const AboutMe = () => {
@@ -60,13 +61,14 @@ const AboutMe = () => {
                 <Image
                   src="/coding-freak.gif"
                   alt="Coding Illustration"
-                  preview={false}
+                  unoptimized
                   style={{
                     borderRadius: '10px',
                     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
                     width: '100%',
                     height: '100%'
                   }}
+
                 />
               </Col>
             </Row>

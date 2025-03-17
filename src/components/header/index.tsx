@@ -1,15 +1,13 @@
 "use client";
-import { CaretRightOutlined, UserOutlined, BulbOutlined } from "@ant-design/icons";
+import { BulbOutlined } from "@ant-design/icons";
 import type { RefineThemedLayoutV2HeaderProps } from "@refinedev/antd";
-import { useGetIdentity } from "@refinedev/core";
+import Image from "next/image";
 import {
   Layout as AntdLayout,
-  Button,
   Col,
   Menu,
   Row,
   Typography,
-  Image,
   theme,
   Switch,
   Space,
@@ -80,6 +78,7 @@ export const Header: React.FC<RefineThemedLayoutV2HeaderProps> = ({ sticky = tru
               alt="Profile Picture"
               width={80}
               height={80}
+              unoptimized
               className={styles.animatedImage} // Add class name for animation
             />
             <Title level={3} className={styles.animatedTitle}>
