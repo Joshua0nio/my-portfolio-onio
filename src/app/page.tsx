@@ -1,8 +1,8 @@
 "use client";
 
-import { Row, Col, Typography, Layout, Button, Space, Divider, Card, Image } from "antd";
+import { Row, Col, Typography, Layout, Button, Space, Divider, Card } from "antd";
 import { FilePdfFilled, GithubFilled, FacebookFilled, LinkedinFilled } from "@ant-design/icons";
-
+import Image from "next/image";
 import styles from "./page.module.css";
 import { useEffect, useRef, useState } from "react";
 import AboutMe from "@components/contents/about-me";
@@ -117,7 +117,11 @@ export default function Home() {
                 alt="Profile Picture"
                 width={500}
                 height={550}
-                style={{ borderRadius: '30%', border: '2px solid #ddd' }}
+                style={{
+                  borderRadius: '30%', border: '2px solid #ddd', width: "100%", // Makes it responsive
+                  height: "auto",
+                }}
+                priority
               />
             </Col>
           </Row>

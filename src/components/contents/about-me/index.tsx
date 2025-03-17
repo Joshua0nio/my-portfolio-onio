@@ -1,6 +1,7 @@
-import { Typography, Row, Col, Card, Avatar, Image } from "antd";
-
+import { Typography, Row, Col, Card, Avatar } from "antd";
+import Image from "next/image";
 const { Title, Paragraph } = Typography;
+
 
 const AboutMe = () => {
   return (
@@ -24,7 +25,7 @@ const AboutMe = () => {
             cover={
               <Avatar
                 size={180}
-                src="/images/alsome.png" // Replace with your image URL
+                src="images/alsome.png" // Replace with your image URL
                 style={{ border: '4px solid #1890ff', borderRadius: '50%' }}
               />
             }
@@ -61,15 +62,13 @@ const AboutMe = () => {
                 <Image
                   src="/images/coding-freak.gif"
                   alt="Coding Illustration"
-                  height={200} // Adjust height as needed
-                  width={300}  // Adjust width as needed
+                  priority
                   style={{
                     borderRadius: '10px',
                     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-                    width: '100%',
-                    height: '100%'
                   }}
-
+                  layout="fill"  // Makes the image responsive
+                  objectFit="contain"  // Keeps aspect ratio
                 />
               </Col>
             </Row>
