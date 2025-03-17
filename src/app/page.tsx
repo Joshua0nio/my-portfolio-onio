@@ -84,7 +84,7 @@ export default function Home() {
           <Row gutter={24} align="middle" style={{ margin: 0 }}>
             <Col xs={24} md={12} style={{ textAlign: 'left', paddingRight: '20px' }}>
               <Title level={1} style={{ color: isDarkMode ? '#f0f2f5' : '#333', fontSize: '2.5rem', marginBottom: '20px' }}>
-                Hello, I'm
+                Hello, Im
                 <br />
                 <Title level={1} style={{ color: isDarkMode ? '#f0f2f5' : '#333', fontSize: '2.5rem', marginBottom: '20px' }}>
                   <span className={styles.typingEffect} ref={textRef}>
@@ -94,7 +94,7 @@ export default function Home() {
               </Title>
 
               <Paragraph style={{ color: isDarkMode ? '#d3d3d3' : '#333', fontSize: '1.2rem', lineHeight: '1.8', textAlign: 'justify' }}>
-                I'm a passionate software developer with nearly a year of experience in back-end development and a solid skill set in front-end technologies. I quickly grasp new concepts and am dedicated to creating impactful solutions. Whether working independently or in a team, I focus on delivering quality work and seamless user experiences. Let’s connect and explore how we can work together to bring your ideas to life.
+                Im a passionate software developer with nearly a year of experience in back-end development and a solid skill set in front-end technologies. I quickly grasp new concepts and am dedicated to creating impactful solutions. Whether working independently or in a team, I focus on delivering quality work and seamless user experiences. Lets connect and explore how we can work together to bring your ideas to life.
               </Paragraph>
 
               <Space size="large">
